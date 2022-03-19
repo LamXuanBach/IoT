@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.acer.iotdemo.MainActivity">
+
+    <TextView
+        android:id="@+id/txtTemperature"
+        android:background="#DC143C"
+        android:gravity="center"
+        android:text="31*C"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+
+        app:layout_heightPercent="25%"
+        app:layout_marginStartPercent="60%"
+        app:layout_marginTopPercent="10%"
+        app:layout_widthPercent="35%" />
+
+    <TextView
+        android:id="@+id/txtLight"
+        android:background="#ff0"
+        android:text="70%"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#000"
+
+        app:layout_widthPercent="35%"
+        app:layout_heightPercent="25%"
+        app:layout_marginStartPercent="10%"
+        app:layout_marginTopPercent="10%"
+        />
+
+    <ImageView
+        android:src="@drawable/light_icon"
+        android:scaleType="fitXY"
+        app:layout_heightPercent="5%"
+        app:layout_marginStartPercent="23%"
+        app:layout_marginTopPercent="10%"
+        app:layout_widthPercent="8%" />
+
+    <ImageView
+        android:src="@drawable/temperature_icon"
+        android:scaleType="fitXY"
+        app:layout_heightPercent="5%"
+        app:layout_marginStartPercent="75%"
+        app:layout_marginTopPercent="10%"
+        app:layout_widthPercent="8%" />
+
+    <ToggleButton
+        android:id="@+id/btnLED"
+        app:layout_heightPercent="20%"
+        app:layout_marginStartPercent="20%"
+        app:layout_marginTopPercent="40%"
+        app:layout_widthPercent="60%" />
+
+</android.support.percent.PercentRelativeLayout>
